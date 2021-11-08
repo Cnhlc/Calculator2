@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#F3EFEF"
+            android:backgroundTint="#FFFDFD"
+            tools:context="MainActivity">
+
+                <TextView
+                    android:id="@+id/et_input"
+                    android:layout_width="336dp"
+                    android:layout_height="74dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center|right"
+                    android:inputType="none"
+                    android:textColor="#1B1A1A"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toTopOf="@+id/guideline4"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.757"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="16dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_begin="411dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="169dp" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_begin="-17dp" />
+
+                <androidx.gridlayout.widget.GridLayout
+                    android:id="@+id/gridLayout"
+                    android:layout_width="348dp"
+                    android:layout_height="414dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintHorizontal_bias="0.262"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline4"
+                    app:layout_constraintVertical_bias="0.409"
+                    tools:ignore="MissingConstraints">
+
+                        <Button
+                            android:id="@+id/btn_clear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_clear"
+                            android:textColor="#000000"
+                            app:layout_column="0"
+                            app:layout_row="0"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_point"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_point"
+                            android:textColor="#000000"
+                            app:layout_column="2"
+                            app:layout_row="4"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_radical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_radical"
+                            android:textColor="#000000"
+                            app:layout_column="3"
+                            app:layout_row="4"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_plus"
+                            android:textColor="#000000"
+                            app:layout_column="3"
+                            app:layout_row="2"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_6"
+                            android:textColor="#000000"
+                            app:layout_column="2"
+                            app:layout_row="2"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_5"
+                            android:textColor="#000000"
+                            app:layout_column="1"
+                            app:layout_row="2"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_0"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_0"
+                            android:textColor="#000000"
+                            app:layout_column="1"
+                            app:layout_row="4"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_7"
+                            android:textColor="#000000"
+                            app:layout_column="0"
+                            app:layout_row="3"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_change"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_change"
+                            android:textColor="#000000"
+                            app:layout_column="3"
+                            app:layout_row="3"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_9"
+                            android:textColor="#000000"
+                            app:layout_column="2"
+                            app:layout_row="3"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_divide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_divide"
+                            android:textColor="#000000"
+                            app:layout_column="1"
+                            app:layout_row="0"
+                            tools:ignore="MissingConstraints"
+                            tools:text="@string/btn_divide" />
+
+                        <Button
+                            android:id="@+id/btn_multply"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_multply"
+                            android:textColor="#000000"
+                            app:layout_column="2"
+                            app:layout_row="0"
+                            tools:ignore="MissingConstraints"
+                            tools:text="@string/btn_multply" />
+
+                        <Button
+                            android:id="@+id/btn_del"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_del"
+                            android:textColor="#000000"
+                            app:layout_column="3"
+                            app:layout_row="0"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_1"
+                            android:textColor="#000000"
+                            app:layout_column="0"
+                            app:layout_row="1"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_2"
+                            android:textColor="#000000"
+                            app:layout_column="1"
+                            app:layout_row="1"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_3"
+                            android:textColor="#000000"
+                            app:layout_column="2"
+                            app:layout_row="1"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#99BDA2"
+                            android:text="@string/btn_minus"
+                            android:textColor="#000000"
+                            app:layout_column="3"
+                            app:layout_row="1"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_4"
+                            android:textColor="#000000"
+                            app:layout_column="0"
+                            app:layout_row="2"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_per"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_per"
+                            android:textColor="#000000"
+                            app:layout_column="0"
+                            app:layout_row="4"
+                            tools:ignore="MissingConstraints" />
+
+                        <Button
+                            android:id="@+id/btn_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="82dp"
+                            android:backgroundTint="#d0d7aa"
+                            android:text="@string/btn_8"
+                            android:textColor="#000000"
+                            app:layout_column="1"
+                            app:layout_row="3"
+                            tools:ignore="MissingConstraints" />
+
+                </androidx.gridlayout.widget.GridLayout>
+
+                <Button
+                    android:id="@+id/btn_equal"
+                    android:layout_width="354dp"
+                    android:layout_height="67dp"
+                    android:backgroundTint="#5E7D65"
+                    android:text="@string/btn_equal"
+                    android:textColor="#000000"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintHorizontal_bias="0.28"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+                    app:layout_constraintVertical_bias="0.2"
+                    tools:ignore="MissingConstraints" />
+
+                <TextView
+                    android:id="@+id/et_output"
+                    android:layout_width="336dp"
+                    android:layout_height="60dp"
+                    android:text="@string/btn_0"
+                    android:textAlignment="textEnd"
+                    android:textColor="#191818"
+                    android:textSize="24sp"
+                    app:layout_constraintBottom_toTopOf="@+id/et_input"
+                    app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/guideline2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
